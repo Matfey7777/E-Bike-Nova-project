@@ -4,15 +4,19 @@
   | default @import url()
   |============================
 */
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+@import './reset.css';
+@import './base.css';
+@import './container.css';
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+@import './header.css';
+@import './hero.css';
+@import './about.css';
+@import './features.css';
+@import './specs.css';
+@import './gallery.css';
+@import './testimonials.css';
+@import './price.css';
+@import './footer.css';
+
+@import './mobile-menu.css';
+@import './order-modal.css';
