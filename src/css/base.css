@@ -52,7 +52,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
-  color: var(--text-color);
+  color: var(--color-scheme-1-text);
 }
 
 .section {
