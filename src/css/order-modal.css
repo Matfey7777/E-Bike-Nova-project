@@ -1,0 +1,136 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+
+  z-index: 99999;
+
+  transition:
+    opacity var(--animation),
+    visibility var(--animation);
+
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.backdrop.is-modal-open {
+  pointer-events: auto;
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal {
+  position: relative;
+  border-radius: 8px;
+  padding: 64px 20px 20px;
+  max-width: 335px;
+  min-width: 320px;
+  height: 723px;
+
+  background: var(--color-scheme-1-background);
+}
+
+.modal-close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 16px;
+  right: 9px;
+
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  color: var(--color-scheme-1-text);
+  background-color: transparent;
+  border: none;
+}
+
+.modal-close-icon {
+  stroke: currentColor;
+}
+
+.modal-title {
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: var(--color-scheme-1-text);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-field-wrapper {
+  text-align: left;
+}
+
+.form-input {
+  width: 100%;
+  font-size: 16px;
+
+  border: 2px solid var(--color-neutral-darkest);
+  border-radius: 6px;
+  padding: 8px 12px;
+  height: 40px;
+  transition: border-color var(--animation);
+
+  background-color: var(--opacity-transparent);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--color-sanguine-brown-dark);
+}
+
+.form-textarea {
+  width: 100%;
+  height: 180px;
+
+  border: 2px solid var(--color-neutral-darkest);
+  border-radius: 6px;
+  padding: 12px;
+  resize: none;
+  transition: border-color var(--animation);
+
+  background-color: var(--opacity-transparent);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  font-size: 16px;
+  color: var(--opacity-neutral-darkest-60);
+}
+
+.form-label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.form-checkout-btn {
+  border: 1px solid var(--color-sanguine-brown);
+  border-radius: 6px;
+  padding: 12px 24px;
+  background-color: var(--color-sanguine-brown);
+
+  font-size: 16px;
+  color: var(--color-white);
+}
