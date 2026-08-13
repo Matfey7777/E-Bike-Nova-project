@@ -1,32 +1,71 @@
 :root {
-  /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
+  --color-scheme-1-background: var(--color-sanguine-brown-lightest);
+  --color-neutral-darkest: rgb(8, 3, 3);
+  --color-scheme-1-border: var(--color-neutral-darkest);
+  --color-scheme-1-text: var(--color-neutral-darkest);
+  --color-neutral-lighter: rgb(217, 217, 217);
+  --color-white: rgb(255, 255, 255);
+  --color-neutral-lightest: rgb(242, 242, 242);
+  --color-neutral-light: rgb(180, 179, 179);
+  --color-neutral: rgb(131, 129, 129);
+  --color-neutral-dark: rgb(82, 78, 78);
+  --color-neutral-darker: rgb(32, 28, 28);
+  --opacity-transparent: rgba(255, 255, 255, 0);
+  --color-scheme-1-foreground: var(--color-sanguine-brown-lighter);
+  --color-scheme-1-accent: var(--color-sanguine-brown);
+  --opacity-white-5: rgba(255, 255, 255, 0.05);
+  --opacity-white-10: rgba(255, 255, 255, 0.1);
+  --opacity-white-15: rgba(255, 255, 255, 0.15);
+  --opacity-white-20: rgba(255, 255, 255, 0.2);
+  --opacity-white-30: rgba(255, 255, 255, 0.3);
+  --opacity-white-40: rgba(255, 255, 255, 0.4);
+  --opacity-white-50: rgba(255, 255, 255, 0.5);
+  --opacity-white-60: rgba(255, 255, 255, 0.6);
+  --opacity-neutral-darkest-5: rgba(8, 3, 3, 0.05);
+  --opacity-neutral-darkest-10: rgba(8, 3, 3, 0.1);
+  --opacity-neutral-darkest-15: rgba(8, 3, 3, 0.15);
+  --opacity-neutral-darkest-20: rgba(8, 3, 3, 0.2);
+  --opacity-neutral-darkest-30: rgba(8, 3, 3, 0.3);
+  --opacity-neutral-darkest-40: rgba(8, 3, 3, 0.4);
+  --opacity-neutral-darkest-50: rgba(8, 3, 3, 0.5);
+  --opacity-neutral-darkest-60: rgba(8, 3, 3, 0.6);
+  --color-sanguine-brown-lightest: rgb(250, 251, 255);
+  --color-sanguine-brown-lighter: rgb(217, 227, 251);
+  --color-sanguine-brown-light: rgb(122, 158, 243);
+  --color-sanguine-brown: rgb(65, 117, 239);
+  --color-sanguine-brown-dark: rgb(52, 93, 191);
+  --color-sanguine-brown-darker: rgb(26, 46, 95);
+  --color-sanguine-brown-darkest: rgb(19, 35, 71);
+  --color-scheme-2-text: var(--color-white);
+  --color-scheme-2-background: var(--color-sanguine-brown-light);
+  --color-scheme-2-border: var(--color-white);
+  --color-scheme-2-accent: var(--color-white);
+  --color-scheme-2-foreground: var(--color-sanguine-brown);
+  --color-red: rgb(157, 0, 0);
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  /* animation */
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-width: 100vw;
-  min-height: 100vh;
-  margin: 0;
+  font-family: 'Cantarell', 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--text-color);
 }
 
-main {
-  flex-grow: 1;
+.section {
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
-main:has(.back-link) {
-  text-align: center;
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1440px) {
+  .section {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
 }
