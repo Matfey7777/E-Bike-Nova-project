@@ -20,7 +20,6 @@
   font-size: 20px;
   line-height: 1.4;
   letter-spacing: -0.01em;
-  max-width: 58px;
 }
 
 .price-text-wrapper {
@@ -67,4 +66,48 @@
 
   font-size: 16px;
   color: var(--color-white);
+
+  transition: background-color var(--animation);
+}
+
+.price-button:active {
+  background-color: var(--color-sanguine-brown-dark);
+}
+
+/* ========================= Tablet ========================= */
+
+@media screen and (min-width: 768px) {
+  .price-cost {
+    font-size: 24px;
+  }
+
+  .price-text {
+    max-width: 704px;
+  }
+
+  .price-button {
+    max-width: 340px;
+    align-items: flex-start;
+  }
+}
+
+/* ========================= Desktop ========================= */
+
+@media screen and (min-width: 1440px) {
+  .price.section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .price .container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    gap: 32px;
+  }
+
+  .price-image {
+    margin-bottom: 0;
+  }
 }
