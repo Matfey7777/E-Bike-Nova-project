@@ -45,6 +45,11 @@
   color: var(--color-scheme-2-text);
 }
 
+.nav-link:hover,
+.nav-link:focus {
+  opacity: 0.5;
+}
+
 .social-list {
   display: flex;
   gap: 22px;
@@ -54,6 +59,11 @@
 
 .social-icon {
   fill: var(--color-scheme-2-text);
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  fill: var(--color-scheme-1-text);
 }
 
 .footer-decoration {
