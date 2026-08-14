@@ -1,0 +1,51 @@
+<section class="price section" id="price">
+  <div class="container">
+    <picture>
+      <source
+        srcset="
+          /img/price/desktop/price-desktop.jpg    1x,
+          /img/price/desktop/price-desktop@2x.jpg 2x
+        "
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="
+          /img/price/tablet/price-tablet.jpg    1x,
+          /img/price/tablet/price-tablet@2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+      />
+
+      <img
+        class="price-image"
+        srcset="/img/price/mobile/price-mobile@2x.jpg 2x"
+        src="/img/price/mobile/price-mobile.jpg"
+        alt="Electric bike"
+      />
+    </picture>
+
+    <div class="price-text-wrapper">
+      <h2 class="price-title">E-bike Nova</h2>
+      <p class="price-cost">$1499</p>
+      <div class="price-description-wrapper">
+        <p class="price-text">
+          The E-Bike Nova redefines urban commuting with its innovative design
+          and powerful performance. Experience the thrill of a smooth ride while
+          contributing to a greener planet.
+        </p>
+        <ul class="price-list">
+          <li class="price-list-item">
+            <p class="price-list-text">Lightweight and high-performance</p>
+          </li>
+          <li class="price-list-item">
+            <p class="price-list-text">Eco-friendly commuting solution</p>
+          </li>
+          <li class="price-list-item">
+            <p class="price-list-text">Long-range battery life</p>
+          </li>
+        </ul>
+      </div>
+      <button class="price-button" type="button">Buy Now</button>
+    </div>
+  </div>
+</section>

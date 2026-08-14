@@ -53,6 +53,7 @@ body {
   font-size: 18px;
   line-height: 1.5;
   color: var(--color-scheme-1-text);
+  background-color: var(--color-scheme-1-background);
 }
 
 .section {

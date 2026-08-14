@@ -1,0 +1,137 @@
+.price.section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.price-image {
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.price-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.price-cost {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+.price-text-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+.price-text {
+  font-size: 16px;
+
+  color: var(--color-scheme-1-text);
+
+  max-width: 335px;
+}
+
+.price-description-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+.price-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.price-list li {
+  position: relative;
+  padding-left: 24px;
+}
+
+.price-list li::before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  width: 2px;
+  height: 2px;
+  background-color: var(--color-scheme-1-border);
+}
+
+.price-list-text {
+  font-size: 16px;
+}
+
+.price-button {
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+
+  background-color: var(--color-sanguine-brown);
+
+  font-size: 16px;
+  color: var(--color-white);
+
+  transition:
+    border var(--animation),
+    background-color var(--animation),
+    color var(--animation);
+}
+
+.price-button:hover,
+.price-button:focus {
+  border: 1px solid var(--color-sanguine-brown-darker);
+  background-color: transparent;
+  color: var(--color-scheme-1-text);
+}
+
+.price-button:active {
+  background: var(--color-sanguine-brown-dark);
+  color: var(--color-white);
+}
+
+/* ========================= Tablet ========================= */
+
+@media screen and (min-width: 768px) {
+  .price-cost {
+    font-size: 24px;
+  }
+
+  .price-text {
+    max-width: 704px;
+  }
+
+  .price-button {
+    max-width: 340px;
+    align-items: flex-start;
+  }
+}
+
+/* ========================= Desktop ========================= */
+
+@media screen and (min-width: 1440px) {
+  .price.section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .price .container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    gap: 32px;
+  }
+
+  .price-image {
+    margin-bottom: 0;
+  }
+}
