@@ -1,0 +1,70 @@
+.price.section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.price-image {
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.price-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.price-cost {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  max-width: 58px;
+}
+
+.price-text-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+.price-text {
+  font-size: 16px;
+
+  color: var(--color-scheme-1-text);
+
+  max-width: 335px;
+}
+
+.price-description-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+.price-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.price-list-text {
+  font-size: 16px;
+
+  padding-left: 24px;
+}
+
+.price-button {
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+
+  background-color: var(--color-sanguine-brown);
+
+  font-size: 16px;
+  color: var(--color-white);
+}
