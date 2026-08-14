@@ -51,10 +51,23 @@
   gap: 8px;
 }
 
+.price-list li {
+  position: relative;
+  padding-left: 24px;
+}
+
+.price-list li::before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  width: 2px;
+  height: 2px;
+  background-color: var(--color-scheme-1-border);
+}
+
 .price-list-text {
   font-size: 16px;
-
-  padding-left: 24px;
 }
 
 .price-button {
@@ -67,11 +80,22 @@
   font-size: 16px;
   color: var(--color-white);
 
-  transition: background-color var(--animation);
+  transition:
+    border var(--animation),
+    background-color var(--animation),
+    color var(--animation);
+}
+
+.price-button:hover,
+.price-button:focus {
+  border: 1px solid var(--color-sanguine-brown-darker);
+  background-color: transparent;
+  color: var(--color-scheme-1-text);
 }
 
 .price-button:active {
-  background-color: var(--color-sanguine-brown-dark);
+  background: var(--color-sanguine-brown-dark);
+  color: var(--color-white);
 }
 
 /* ========================= Tablet ========================= */
