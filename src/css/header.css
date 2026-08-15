@@ -1,0 +1,80 @@
+#header .container {
+  display: flex;
+  padding-top: 8px;
+  align-items: center;
+}
+
+.logo-site {
+  width: 146px;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-sanguine-brown-darkest);
+  fill: currentColor;
+
+  margin-left: auto;
+  margin-right: 32px;
+}
+
+.list-nav {
+  display: none;
+}
+
+.list-nav-link {
+  font-weight: 400;
+  font-size: 16px;
+}
+.burger-btn {
+  width: 48px;
+  height: 48px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: transparent;
+
+  transition: opacity var(--animation);
+}
+
+.logo-site:hover,
+.logo-site:focus,
+.list-nav-link:hover,
+.list-nav-link:focus,
+.burger-btn:hover,
+.burger-btn:focus {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+  #header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8.5px;
+    padding-bottom: 8.5px;
+  }
+  .logo-site {
+    margin-left: 0;
+    margin-right: 0;
+    width: 126px;
+    height: 54px;
+  }
+  .loso-site-svg {
+    width: 62px;
+    height: 47px;
+  }
+  .list-nav {
+    display: flex;
+    gap: 32px;
+  }
+  .burger-btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 1440px) {
+}
