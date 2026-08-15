@@ -1,0 +1,66 @@
+<div id="order-modal" class="backdrop is-modal-open">
+  <div class="modal">
+    <button class="modal-close-btn" id="modal-close-btn">
+      <svg class="modal-close-icon" width="14" height="14">
+        <use href="./img/icons.svg#close-icon"></use>
+      </svg>
+    </button>
+    <h2 class="modal-title">Order E-bike</h2>
+    <form class="modal-form form" autocomplete="off" novalidate>
+      <div class="form-field-wrapper">
+        <label for="username" class="form-label">Name<sup></sup></label>
+        <input
+          type="text"
+          class="form-input"
+          id="username"
+          name="username"
+          placeholder="Thomas"
+          minlength="5"
+          maxlength="64"
+          required
+          autofocus
+        />
+        <p class="form-error">Error Text</p>
+      </div>
+      <div class="form-field-wrapper">
+        <label for="email" class="form-label">Email<sup></sup></label>
+        <input
+          type="email"
+          class="form-input"
+          id="email"
+          name="email"
+          placeholder="hello@e-bike.com"
+          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          required
+        />
+        <p class="form-error">Error Text</p>
+      </div>
+      <div class="form-field-wrapper">
+        <label for="address" class="form-label">Address<sup></sup></label>
+        <input
+          type="text"
+          class="form-input"
+          id="address"
+          name="address"
+          placeholder="Nieuwendijk 100, 1012 MR Amsterdam"
+          minlength="6"
+          maxlength="64"
+          required
+        />
+        <p class="form-error">Error Text</p>
+      </div>
+      <div class="form-field-wrapper">
+        <label for="comment" class="form-label">Comment<sup></sup></label>
+        <textarea
+          class="form-textarea"
+          id="comment"
+          name="comment"
+          placeholder="Type your comment..."
+          maxlength="500"
+        ></textarea>
+        <p class="form-error">Error Text</p>
+      </div>
+      <button class="form-checkout-btn">Go to Checkout</button>
+    </form>
+  </div>
+</div>
