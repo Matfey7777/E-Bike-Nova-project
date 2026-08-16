@@ -1,4 +1,4 @@
-const openModalBtn = document.querySelector('.open-modal');
+const openModalBtn = document.querySelector('.price-button');
 const closeModalBtn = document.getElementById('modal-close-btn');
 const backdrop = document.getElementById('order-modal');
 
