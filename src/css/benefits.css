@@ -1,0 +1,140 @@
+.benefits-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.benefits-subtitle {
+  margin-bottom: 16px;
+
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.benefits-title {
+  margin-bottom: 24px;
+
+  font-weight: 700;
+  font-size: 36px;
+
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.benefits-item {
+  display: flex;
+  flex-direction: column;
+  min-width: 280px;
+
+  overflow: hidden;
+
+  background-color: var(--color-scheme-1-foreground);
+  border: 2px solid var(--color-scheme-1-border);
+  border-radius: 8px;
+}
+
+.benefits-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  padding: 16px;
+}
+
+.benefits-item-subtitle {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.benefits-item-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+.benefits-item-description {
+  font-size: 16px;
+}
+
+.benefits-picture {
+  display: block;
+  height: 160px;
+}
+
+.benefits-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .benefits-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .benefits-item-content {
+    padding: 24px;
+  }
+
+  .benefits-item:first-child {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .benefits-item:first-child .benefits-item-content,
+  .benefits-item:first-child .benefits-picture {
+    width: 50%;
+  }
+
+  .benefits-item:first-child .benefits-item-content {
+    justify-content: center;
+  }
+
+  .benefits-picture {
+    height: 171px;
+  }
+
+  .benefits-item:first-child .benefits-picture {
+    height: 328px;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1440px) {
+  .benefits-list {
+    flex-wrap: nowrap;
+    gap: 32px;
+  }
+
+  .benefits-item {
+    width: calc((100% - 64px) / 4);
+    height: 375px;
+  }
+
+  .benefits-item:first-child {
+    width: calc((100% - 64px) / 2);
+  }
+
+  .benefits-item:first-child .benefits-picture {
+    height: 375px;
+  }
+  .benefits-item:not(:first-child) .benefits-item-content {
+    flex-grow: 1;
+  }
+}
