@@ -1,0 +1,101 @@
+.gallery-title {
+  margin-bottom: 24px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+.gallery-subtitle {
+  margin-bottom: 32px;
+
+  text-align: center;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.gallery-item,
+.gallery-group {
+  width: 100%;
+}
+
+.gallery-inner-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.gallery-inner-item {
+  width: calc((100% - 16px) / 2);
+}
+
+.gallery-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ========================= Tablet ========================= */
+
+@media screen and (min-width: 768px) {
+  .gallery-list {
+    gap: 24px;
+  }
+
+  .gallery-item,
+  .gallery-group {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .gallery-inner-list {
+    gap: 24px;
+  }
+
+  .gallery-inner-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+/* ========================= Desktop ========================= */
+
+@media screen and (min-width: 1440px) {
+  .gallery-title,
+  .gallery-subtitle {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gallery-title {
+    font-size: 48px;
+  }
+
+  .gallery-subtitle {
+    margin-bottom: 64px;
+  }
+
+  .gallery-list {
+    gap: 32px;
+  }
+
+  .gallery-item,
+  .gallery-group {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .gallery-inner-list {
+    gap: 32px;
+  }
+
+  .gallery-inner-item {
+    width: calc((100% - 32px) / 2);
+  }
+}

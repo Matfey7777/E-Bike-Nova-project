@@ -1,6 +1,6 @@
-/*const burger = document.getElementById('burger');
-const menu = document.getElementById('mobile-menu');
-const closeBtn = document.getElementById('menu-close');
+const burger = document.querySelector('.burger-btn');
+const menu = document.getElementById('mobile');
+const closeBtn = document.querySelector('.close-btn');
 
 burger.addEventListener('click', () => {
   menu.classList.add('is-open');
@@ -8,4 +8,4 @@ burger.addEventListener('click', () => {
 
 closeBtn.addEventListener('click', () => {
   menu.classList.remove('is-open');
-});*/
+});

@@ -1,0 +1,93 @@
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-title {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.about-title::before {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 24px;
+
+  background-image: url('../img/bike-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.about-description {
+  margin: 0;
+  font-family: 'Cantarell', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.about-picture {
+  display: block;
+  width: 100%;
+}
+
+.about-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .about-text {
+    width: 340px;
+    flex-shrink: 0;
+  }
+
+  .about-picture {
+    width: 340px;
+    flex-shrink: 0;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1440px) {
+  .about-content {
+    gap: 32px;
+  }
+
+  .about-text {
+    width: 640px;
+  }
+
+  .about-picture {
+    width: 640px;
+  }
+
+  .about-title {
+    font-size: 40px;
+  }
+}
