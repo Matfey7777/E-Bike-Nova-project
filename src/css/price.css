@@ -71,7 +71,7 @@
 }
 
 .price-button {
-  border: none;
+  border: 1px solid transparent;
   border-radius: 6px;
   padding: 12px 24px;
 
