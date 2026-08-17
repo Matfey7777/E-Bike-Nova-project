@@ -1,6 +1,7 @@
 #header .container {
   display: flex;
   padding-top: 8px;
+  padding-right: 12px;
   align-items: center;
 }
 
