@@ -51,6 +51,9 @@
   stroke: currentColor;
 }
 
+.mobile-navigation {
+  margin-top: 16px;
+}
 .mobile-list-nav {
   display: flex;
   flex-direction: column;
