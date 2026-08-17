@@ -6,7 +6,7 @@
 }
 
 .logo-site {
-  width: 146px;
+  width: 191px;
   height: 62px;
 
   display: flex;
@@ -65,9 +65,9 @@
     align-items: center;
   }
   .logo-site {
-    margin: 0;
-    width: 126px;
+    width: 141px;
     height: 54px;
+    margin: 0;
   }
   .loso-site-svg {
     width: 62px;
