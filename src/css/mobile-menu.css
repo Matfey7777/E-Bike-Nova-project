@@ -27,11 +27,7 @@
   pointer-events: auto;
   transform: translateX(0);
 }
-.logo-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 16px;
-}
+
 .close-btn {
   position: absolute;
   right: 12px;
