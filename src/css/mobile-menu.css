@@ -11,8 +11,6 @@
   top: 0;
   left: 0;
 
-  opacity: 0;
-  visibility: hidden;
   pointer-events: none;
   transform: translateX(100%);
 
@@ -22,8 +20,6 @@
 }
 
 .mobile-menu.is-open {
-  opacity: 1;
-  visibility: visible;
   pointer-events: auto;
   transform: translateX(0);
 }
