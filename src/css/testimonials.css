@@ -89,6 +89,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .testimonials-title {
+    font-size: 48px;
+  }
+
   .testimonials-subtitle {
     margin-bottom: 80px;
   }
@@ -98,5 +102,9 @@
 
   .testimonials-item {
     width: calc((100% - 64px) / 3);
+  }
+
+  .testimonials-item-text {
+    margin-bottom: 32px;
   }
 }
