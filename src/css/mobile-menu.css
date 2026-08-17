@@ -1,9 +1,6 @@
 #mobile .container {
   padding-top: 8px;
-}
-#mobile .logo-site {
-  margin-left: 0;
-  margin-right: 0;
+  position: relative;
 }
 
 .mobile-menu {
