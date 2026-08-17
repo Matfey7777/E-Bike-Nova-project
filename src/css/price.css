@@ -134,4 +134,12 @@
   .price-image {
     margin-bottom: 0;
   }
+
+  .price-title {
+    font-size: 40px;
+  }
+
+  .price-cost {
+    font-size: 24px;
+  }
 }
