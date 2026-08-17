@@ -80,4 +80,7 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  #header .container {
+    padding: 8.5px 64px;
+  }
 }
