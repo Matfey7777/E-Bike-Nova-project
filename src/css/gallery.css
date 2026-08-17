@@ -69,14 +69,13 @@
 @media screen and (min-width: 1440px) {
   .gallery-title,
   .gallery-subtitle {
-    margin-bottom: 32px;
-
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .gallery-title {
+    margin-bottom: 24px;
     font-size: 48px;
   }
 
