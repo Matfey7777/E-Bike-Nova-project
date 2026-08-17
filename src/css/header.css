@@ -47,7 +47,10 @@
 
   transition: opacity var(--animation);
 }
-
+.burger-svg use {
+  width: 72px;
+  height: 54px;
+}
 .logo-site:hover,
 .logo-site:focus,
 .list-nav-link:hover,
@@ -60,13 +63,12 @@
 
 @media screen and (min-width: 768px) {
   #header .container {
-    display: flex;
+    padding: 8.5px 32px;
     justify-content: space-between;
-    align-items: center;
   }
   .logo-site {
     width: 141px;
-    height: 54px;
+    height: 55px;
     margin: 0;
   }
   .loso-site-svg {
