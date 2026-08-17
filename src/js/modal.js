@@ -40,4 +40,8 @@ form.addEventListener('submit', event => {
       error.textContent = 'valid';
     }
   });
+
+  if (form.checkValidity()) {
+    backdrop.classList.remove('is-modal-open');
+  }
 });
