@@ -137,4 +137,10 @@
   .benefits-item:not(:first-child) .benefits-item-content {
     flex-grow: 1;
   }
+  .benefits-title {
+    font-size: 48px;
+  }
+  .benefits-item-title {
+    font-size: 24px;
+  }
 }
