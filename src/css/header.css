@@ -2,10 +2,9 @@
   display: flex;
   padding-top: 8px;
   align-items: center;
-}
-.header {
   position: relative;
 }
+
 .logo-site {
   width: 146px;
   height: 62px;
