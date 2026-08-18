@@ -2,7 +2,7 @@
 
 @media screen {
   .hero-section {
-    margin-top: 72px;
+    padding-top: 136px;
   }
   .hero-container {
     display: flex;
@@ -156,6 +156,9 @@
 /* DESKTOP */
 
 @media screen and (min-width: 1440px) {
+  .hero-section {
+    padding-top: 184px;
+  }
   .hero-title {
     font-size: 56px;
 
