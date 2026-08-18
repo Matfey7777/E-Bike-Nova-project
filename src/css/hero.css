@@ -1,6 +1,9 @@
 /* MOBILE */
 
 @media screen {
+  .hero-section {
+    margin-top: 72px;
+  }
   .hero-container {
     display: flex;
     flex-direction: column;
@@ -20,6 +23,10 @@
   }
   .hero-description {
     margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5em;
+    letter-spacing: 0;
   }
   .hero-links-list {
     display: flex;
