@@ -13,6 +13,7 @@
   opacity: 0;
 
   z-index: 99999;
+  overflow-y: auto;
 
   transition:
     opacity var(--animation),
@@ -191,6 +192,20 @@
   color: var(--color-red);
   border-color: var(--color-red);
   visibility: visible;
+}
+
+@media screen and (max-height: 722px) {
+  .backdrop {
+    overflow-y: auto;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-height: 790px) and (min-width: 768px) {
+  .backdrop {
+    overflow-y: auto;
+    align-items: flex-start;
+  }
 }
 
 @media screen and (min-width: 768px) {
