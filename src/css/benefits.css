@@ -91,10 +91,11 @@
 
   .benefits-item {
     width: calc((100% - 24px) / 2);
+    height: 328px;
   }
 
   .benefits-item-content {
-    padding: 24px;
+    padding-bottom: 17px;
   }
 
   .benefits-item:first-child {
