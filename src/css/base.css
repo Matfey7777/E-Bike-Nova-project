@@ -58,6 +58,8 @@ body {
   line-height: 1.5;
   color: var(--color-scheme-1-text);
   background-color: var(--color-scheme-1-background);
+  scroll-behavior: smooth;
+  scroll-margin-top: 80px;
 }
 
 .section {

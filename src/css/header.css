@@ -11,7 +11,7 @@
   transform: translateX(-50%);
   background: var(--color-scheme-1-background);
   width: 100%;
-  z-index: 99999999999999999;
+  z-index: 9;
   box-shadow: var(--border-box-header);
 }
 .logo-site {
