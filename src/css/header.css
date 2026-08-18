@@ -4,7 +4,12 @@
   align-items: center;
   position: relative;
 }
-
+.header {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-scheme-1-background);
+}
 .logo-site {
   width: 191px;
   height: 62px;
@@ -65,6 +70,7 @@
   #header .container {
     padding: 8.5px 32px;
     justify-content: space-between;
+    min-width: 768px;
   }
   .logo-site {
     width: 141px;
@@ -86,5 +92,6 @@
 @media screen and (min-width: 1440px) {
   #header .container {
     padding: 8.5px 64px;
+    min-width: 1440px;
   }
 }
