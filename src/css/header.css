@@ -9,6 +9,8 @@
   left: 50%;
   transform: translateX(-50%);
   background: var(--color-scheme-1-background);
+  width: 100%;
+  z-index: 99999999999999999;
 }
 .logo-site {
   width: 191px;
