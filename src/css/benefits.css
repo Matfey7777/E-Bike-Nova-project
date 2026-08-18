@@ -38,7 +38,10 @@
   flex-grow: 1;
   gap: 8px;
 
-  padding: 16px;
+  padding-bottom: 17px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
 }
 
 .benefits-item-subtitle {
@@ -95,7 +98,9 @@
   }
 
   .benefits-item-content {
-    padding-bottom: 17px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px;
   }
 
   .benefits-item:first-child {
@@ -132,6 +137,10 @@
   .benefits-item {
     width: calc((100% - 64px) / 4);
     height: 375px;
+  }
+
+  .benefits-item-content {
+    padding-bottom: 24px;
   }
 
   .benefits-item:first-child {
