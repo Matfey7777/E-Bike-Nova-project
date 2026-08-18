@@ -50,7 +50,10 @@
 
   --border-box-header: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
+html {
+  scroll-behavior: smooth;
+  scroll-margin-top: 80px;
+}
 body {
   font-family: 'Cantarell', 'Poppins', sans-serif;
   font-weight: 400;
@@ -58,8 +61,6 @@ body {
   line-height: 1.5;
   color: var(--color-scheme-1-text);
   background-color: var(--color-scheme-1-background);
-  scroll-behavior: smooth;
-  scroll-margin-top: 80px;
 }
 
 .section {
